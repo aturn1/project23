@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    tools{
+        maven 'maven'
+        jdk 'javajdk'
+    }
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
